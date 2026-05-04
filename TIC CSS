@@ -1,0 +1,141 @@
+/* ================================= */
+/* 🏛️ THE IMPERIAL COUNCIL THEME */
+/* ================================= */
+
+:root {
+  --gold: #d4af37;
+  --light-gold: #f1e5ac;
+  --white: #f8f8f8;
+  --marble: #e5e5e5;
+  --stone: #cfcfcf;
+  --shadow: rgba(0,0,0,0.35);
+}
+
+/* ================================= */
+/* 🌄 DESKTOP BACKGROUND */
+/* ================================= */
+
+body {
+  background: url("https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png") center/cover no-repeat fixed;
+  font-family: 'IM Fell Double Pica SC', serif;
+  color: #2f2f2f !important;
+}
+
+/* soft marble overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.65);
+  z-index: -1;
+}
+
+/* ================================= */
+/* 📱 MOBILE BACKGROUND */
+/* ================================= */
+
+@media screen and (max-width: 800px) {
+  body {
+    background: url("https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png") center/cover no-repeat fixed;
+  }
+}
+
+/* ================================= */
+/* 📦 MAIN CONTENT */
+/* ================================= */
+
+.container.main {
+  background: rgba(255,255,255,0.9) !important;
+  border: 2px solid var(--gold);
+  border-radius: 14px;
+  box-shadow: 0 0 20px var(--shadow);
+  padding: 15px;
+}
+
+/* ================================= */
+/* 🏛️ HEADERS */
+/* ================================= */
+
+h1, h2, h3 {
+  color: var(--gold) !important;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 6px;
+}
+
+/* ================================= */
+/* 📜 TABLES */
+/* ================================= */
+
+.container.main .table {
+  background: rgba(255,255,255,0.95) !important;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--stone);
+}
+
+.container.main .table td,
+.container.main .table th {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 10px !important;
+}
+
+/* subtle gold striping */
+.container.main .table tr:nth-child(even) {
+  background: rgba(212,175,55,0.07);
+}
+
+/* ================================= */
+/* 🎟️ RAFFLE IMAGES */
+/* ================================= */
+
+/* targets most images inside clan tables (raffles included) */
+.container.main .table img {
+  border-radius: 10px;
+  border: 2px solid var(--gold);
+  padding: 2px;
+  background: #fff;
+  transition: 0.25s ease;
+}
+
+/* hover glow */
+.container.main .table img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(212,175,55,0.6);
+}
+
+/* raffle-specific tightening (prevents weird stretching) */
+.container.main .table img[src*="raffle"],
+.container.main .table img[src*="lion"] {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================================= */
+/* 🔗 LINKS */
+/* ================================= */
+
+a {
+  color: #b8962e !important;
+}
+
+a:hover {
+  color: #8a6d1f !important;
+}
+
+  .container.main {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 18px;
+  }
+}
+
+/* Pink Wing Pointer - https://www.cursors-4u.com/cursor/wing-pointer */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/pink-wing-pointer-37c922c2-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */

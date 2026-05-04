@@ -49,24 +49,19 @@ body::before {
 }
 
 /* ============================= */
-/* ⚜️ CHAT (IMPERIAL COUNCIL THEME - FIXED) */
+/* ⚜️ CHAT (IMPERIAL COUNCIL THEME) */
 /* ============================= */
 
-/* Base message styling (replaces odd/even system for stability) */
-#chatMessageList .s-chat-message {
-    background: rgba(245, 245, 245, 0.88) !important; /* marble white */
+/* Even messages */
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(245, 245, 245, 0.92) !important; /* marble white */
+    color: #2f2f2f !important; /* charcoal text */
+}
+
+/* Odd messages */
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(220, 220, 220, 0.75) !important; /* stone grey */
     color: #2f2f2f !important;
-    border: none !important;
-}
-
-/* Slight variation for alternating feel (more stable than nth-child) */
-#chatMessageList .s-chat-message:nth-of-type(2n) {
-    background: rgba(230, 230, 230, 0.78) !important; /* stone grey */
-}
-
-/* Hover effect (adds depth, replaces reliance on structure) */
-#chatMessageList .s-chat-message:hover {
-    background: rgba(212, 175, 55, 0.10) !important; /* soft gold glow */
 }
 
 /* Pinned message */
@@ -74,25 +69,24 @@ body::before {
     background: linear-gradient(
         90deg,
         rgba(245,245,245,0.95),
-        rgba(212,175,55,0.22)
+        rgba(212,175,55,0.18) /* imperial gold */
     ) !important;
 
     color: #2f2f2f !important;
-    border: 1px solid rgba(212,175,55,0.35) !important;
+    border: none !important;
 
-    box-shadow: 0 0 12px rgba(212,175,55,0.25);
+    box-shadow: 0 0 10px rgba(212,175,55,0.25); /* gold glow */
 }
 
 /* Timestamps */
 .s-chat-message_timestamp {
-    color: #b08d2a !important;
+    color: #b08d2a !important; /* muted gold */
     opacity: 0.9;
 }
 
 /* Chat container */
-#chatMessageContainer {
+div#chatMessageContainer {
     border: none !important;
-    background: transparent !important;
 }
 
 /* Channel button (Main, Sales, etc.) */
@@ -108,7 +102,7 @@ button#label_currentChannel {
 
     box-shadow: 0 0 10px rgba(212,175,55,0.25);
 }
-
+  
 /* ================================= */
 /* 📦 MAIN CONTENT */
 /* ================================= */

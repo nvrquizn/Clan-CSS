@@ -11,6 +11,11 @@
   --shadow: rgba(0,0,0,0.35);
 }
 
+/* Pink Wing Pointer - https://www.cursors-4u.com/cursor/wing-pointer */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/pink-wing-pointer-37c922c2-32.webp') 32 32, auto !important;
+}
+
 /* ================================= */
 /* 🌄 DESKTOP BACKGROUND */
 /* ================================= */
@@ -133,9 +138,3 @@ a:hover {
     font-size: 18px;
   }
 }
-
-/* Pink Wing Pointer - https://www.cursors-4u.com/cursor/wing-pointer */
-* {
-  cursor: url('https://cdn.cursors-4u.net/previews/pink-wing-pointer-37c922c2-32.webp') 32 32, auto !important;
-}
-/* End www.Cursors-4U.com Code */

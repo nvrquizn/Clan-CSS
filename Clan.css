@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 
 /* ================================= */
-/* 🎟️ RAFFLE IMAGES */
+/* 🎟️ RAFFLE and HOARD IMAGES */
 /* ================================= */
 
 /* targets most images inside clan tables (raffles included) */
@@ -119,6 +119,22 @@ h1, h2, h3 {
 .container.main .table img[src*="lion"] {
   max-width: 100%;
   height: auto;
+}
+
+div.cave-grid>img[src$="hoardbanner.png"] { 
+    content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
+    height: 100px; 
+    width: 100px; 
+    opacity: 1; 
+    overflow: hidden; 
+}
+
+  div.cave-grid>img[src$="rafflebanner.png"] { 
+    content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
+    height: 100px; 
+    width: 100px; 
+    opacity: 1; 
+    overflow: hidden; 
 }
 
 /* ================================= */

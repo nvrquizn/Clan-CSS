@@ -121,7 +121,7 @@ h1, h2, h3 {
   height: auto;
 }
 
-div.cave-grid>img[src$="hoardbanner.png"] { 
+div.cave-grid>img[src$="clanhoardbanner.png"] { 
     content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
     height: 100px; 
     width: 100px; 
@@ -129,7 +129,7 @@ div.cave-grid>img[src$="hoardbanner.png"] {
     overflow: hidden; 
 }
 
-  div.cave-grid>img[src$="rafflebanner.png"] { 
+  div.cave-grid>img[src$="clanrafflebanner.png"] { 
     content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
     height: 100px; 
     width: 100px; 

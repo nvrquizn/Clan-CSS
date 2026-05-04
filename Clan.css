@@ -47,61 +47,6 @@ body::before {
     background: url("https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png") center/cover no-repeat fixed;
   }
 }
-
-/* ============================= */
-/* ⚜️ CHAT (IMPERIAL COUNCIL THEME) */
-/* ============================= */
-
-/* Even messages */
-#chatMessageList .s-chat-message:nth-child(even) {
-    background: rgba(245, 245, 245, 0.92) !important; /* marble white */
-    color: #2f2f2f !important; /* charcoal text */
-}
-
-/* Odd messages */
-#chatMessageList .s-chat-message:nth-child(odd) {
-    background: rgba(220, 220, 220, 0.75) !important; /* stone grey */
-    color: #2f2f2f !important;
-}
-
-/* Pinned message */
-.s-chat-message__pinned {
-    background: linear-gradient(
-        90deg,
-        rgba(245,245,245,0.95),
-        rgba(212,175,55,0.18) /* imperial gold */
-    ) !important;
-
-    color: #2f2f2f !important;
-    border: none !important;
-
-    box-shadow: 0 0 10px rgba(212,175,55,0.25); /* gold glow */
-}
-
-/* Timestamps */
-.s-chat-message_timestamp {
-    color: #b08d2a !important; /* muted gold */
-    opacity: 0.9;
-}
-
-/* Chat container */
-div#chatMessageContainer {
-    border: none !important;
-}
-
-/* Channel button (Main, Sales, etc.) */
-button#label_currentChannel {
-    background: linear-gradient(
-        90deg,
-        #f5f5f5,
-        #d4af37
-    ) !important;
-
-    color: #2f2f2f !important;
-    border: none !important;
-
-    box-shadow: 0 0 10px rgba(212,175,55,0.25);
-}
   
 /* ================================= */
 /* 📦 MAIN CONTENT */

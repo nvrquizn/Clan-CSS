@@ -11,7 +11,13 @@
   --shadow: rgba(0,0,0,0.35);
 }
 
-/* https://i.ibb.co/6cf7P9BH/laurelwreath-20260503224424.png */
+/*logo replacer*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://i.ibb.co/6cf7P9BH/laurelwreath-20260503224424.png');
+    width: 230px !important;
+    height: 120px !important;
+	object-fit: contain !important;
+}
 
 /* Pink Wing Pointer - https://www.cursors-4u.com/cursor/wing-pointer */
 * {

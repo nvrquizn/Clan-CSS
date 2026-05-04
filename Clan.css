@@ -16,7 +16,7 @@
   body,
 button,
 a {
-  cursor: url('https://cdn.cursors-4u.net/previews/pink-wing-pointer-37c922c2-32.webp') 32 32, pointer;
+  cursor: url('https://cdn.cursors-4u.net/previews/pink-wing-pointer-37c922c2-32.webp') 32 32, pointer !important;
 }
 
 /* ================================= */
@@ -49,19 +49,24 @@ body::before {
 }
 
 /* ============================= */
-/* ⚜️ CHAT (IMPERIAL COUNCIL THEME) */
+/* ⚜️ CHAT (IMPERIAL COUNCIL THEME - FIXED) */
 /* ============================= */
 
-/* Even messages */
-#chatMessageList .s-chat-message:nth-child(even) {
-    background: rgba(245, 245, 245, 0.92) !important; /* marble white */
-    color: #2f2f2f !important; /* soft charcoal text */
+/* Base message styling (replaces odd/even system for stability) */
+#chatMessageList .s-chat-message {
+    background: rgba(245, 245, 245, 0.88) !important; /* marble white */
+    color: #2f2f2f !important;
+    border: none !important;
 }
 
-/* Odd messages */
-#chatMessageList .s-chat-message:nth-child(odd) {
-    background: rgba(220, 220, 220, 0.75) !important; /* light stone grey */
-    color: #2f2f2f !important;
+/* Slight variation for alternating feel (more stable than nth-child) */
+#chatMessageList .s-chat-message:nth-of-type(2n) {
+    background: rgba(230, 230, 230, 0.78) !important; /* stone grey */
+}
+
+/* Hover effect (adds depth, replaces reliance on structure) */
+#chatMessageList .s-chat-message:hover {
+    background: rgba(212, 175, 55, 0.10) !important; /* soft gold glow */
 }
 
 /* Pinned message */
@@ -69,24 +74,25 @@ body::before {
     background: linear-gradient(
         90deg,
         rgba(245,245,245,0.95),
-        rgba(212,175,55,0.18) /* gold accent */
+        rgba(212,175,55,0.22)
     ) !important;
 
     color: #2f2f2f !important;
-    border: none !important;
+    border: 1px solid rgba(212,175,55,0.35) !important;
 
-    box-shadow: 0 0 10px rgba(212,175,55,0.25); /* soft gold glow */
+    box-shadow: 0 0 12px rgba(212,175,55,0.25);
 }
 
 /* Timestamps */
 .s-chat-message_timestamp {
-    color: #b08d2a !important; /* muted imperial gold */
+    color: #b08d2a !important;
     opacity: 0.9;
 }
 
 /* Chat container */
-div#chatMessageContainer {
+#chatMessageContainer {
     border: none !important;
+    background: transparent !important;
 }
 
 /* Channel button (Main, Sales, etc.) */

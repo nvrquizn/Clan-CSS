@@ -121,7 +121,7 @@ h1, h2, h3 {
   height: auto;
 }
 
-img[src*="rafflebanner.png"] { 
+img[src*="clanrafflebanner.png"] { 
     content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
     height: 100px; 
     width: 100px; 
@@ -129,7 +129,7 @@ img[src*="rafflebanner.png"] {
     overflow: hidden; 
 }
 
-img[src*="hoardbanner.png"] { 
+img[src*="clanhoardbanner.png"] { 
     content: url('https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png') !important; 
     height: 100px; 
     width: 100px; 

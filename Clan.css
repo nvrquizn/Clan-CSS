@@ -170,7 +170,46 @@ body::before {
     box-shadow: 0 0 10px rgba(184, 150, 46, 0.2);
 }
 
+/* ============================= */
+/* 🌙 NAVBAR */
+/* ============================= */
 
+.navbar {
+    background: #fdfdfb;
+
+    border-bottom: 0px ridge !important;
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 -40px 60px rgba(245, 242, 235, 0.45),
+        0 0 10px rgba(184, 150, 46, 0.25) !important;
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 18px !important;
+
+    color: #222222 !important;
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #f5f2eb;
+
+    color: #8a6d1f !important;
+
+    text-shadow: 0 0 8px rgba(184, 150, 46, 0.35);
+
+    border-radius: 18px;
+
+    box-shadow:
+        inset 0 0 18px rgba(184, 150, 46, 0.12);
+
+    transition: 0.7s !important;
+}
   
 /* ================================= */
 /* 📦 MAIN CONTENT */

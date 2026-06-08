@@ -218,7 +218,6 @@ body::before {
 .container.main .box, 
 div.box, 
 .table,
-.alert-success,
 #pageContainer {
     background: transparent !important;
     border: none !important;

@@ -214,19 +214,20 @@ body::before {
 /* ================================= */
 /* 📦 MAIN CONTENT */
 /* ================================= */
-
-.container.main {
+.container.main,
+.container.main .box,
+div.box,
+.table {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    padding: 15px;
 }
 
-.container.main .box,
-div.box {
+/* Keeps the inner cells clean without adding background layers */
+.table td, 
+.table th {
     background: transparent !important;
     border: none !important;
-    box-shadow: none !important;
 }
 	
 /* ================================= */

@@ -166,38 +166,209 @@ a:hover {
   }
 }
 
-/* 📜 HOVER-EXPANDING CLAN CARDS) */
-.clan-accordion {
-    display: flex; 
-    width: 100%; 
-    min-height: 400px;
-    gap: 15px; 
-    transition: all 0.5s ease;
-}
+/* ================================= */
+/* 🏛️ ANCIENT GREEK TEMPLE UI STYLING */
+/* ================================= */
 
-.clan-card {
-    flex: 1; 
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid var(--gold);
-    border-radius: 10px;
-    padding: 15px;
-    overflow: hidden; 
+/* Outer Layout Frame */
+.greek-temple-layout {
+    text-align: center;
+    background: linear-gradient(rgba(245, 245, 245, 0.45), rgba(235, 235, 235, 0.65)), 
+                url('https://i.ibb.co/b5NrmQm5/Screenshot-2026-05-03-at-22-49-40.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px double #b8962e;
+    border-radius: 4px; /* Crisp structural layout edges */
+    padding: 25px 20px;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.15);
     display: flex;
-    flex-direction: column; /* Allows internal items to stack properly */
-    transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    flex-direction: column;
+    gap: 20px;
 }
 
-.clan-accordion:hover .clan-card { flex: 0.6; filter: blur(1px) brightness(0.9); }
-.clan-accordion .clan-card:hover { flex: 2; filter: blur(0) brightness(1); }
-
-/* Flex-grow so it fills available space instead of a fixed height */
-.card-scroll {
-    flex-grow: 1; 
-    overflow-y: auto; 
-    font-size: 14px;
-    padding-right: 5px;
+/* Dashboard Top Navigation Bar */
+.agora-directory {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #b8962e;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
-/* Make scrollbar visible but elegant */
-.card-scroll::-webkit-scrollbar { width: 6px; }
-.card-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+.directory-btn {
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    color: #333 !important;
+    text-decoration: none !important;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.directory-btn:hover {
+    color: #b8962e !important;
+    background: rgba(184, 150, 46, 0.08);
+    border: 1px solid #b8962e;
+    transform: translateY(-1px);
+}
+
+/* Featured Announcement Banner (Full Width) */
+.temple-feature-tablet {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(184, 150, 46, 0.4);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.temple-headline {
+    font-family: 'IM Fell Double Pica SC', serif;
+    color: #222;
+    margin: 0 0 5px 0 !important;
+    font-size: 22px !important;
+    letter-spacing: 1px;
+}
+
+.temple-motto {
+    font-style: italic;
+    color: #8a6d1f;
+    font-size: 13px;
+    margin: 0 0 12px 0;
+}
+
+.temple-divider {
+    width: 60px;
+    height: 1px;
+    background: #b8962e;
+    margin: 0 auto 12px auto;
+}
+
+.temple-body {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Side-by-Side Layout Row */
+.temple-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Fallback for smaller windows or mobile layouts */
+@media (max-width: 768px) {
+    .temple-row {
+        flex-direction: column;
+    }
+}
+
+/* Static Stone Content Columns */
+.temple-column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(184, 150, 46, 0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-header {
+    font-family: 'IM Fell Double Pica SC', serif;
+    background: rgba(245, 242, 235, 0.8);
+    border-bottom: 1px solid rgba(184, 150, 46, 0.3);
+    margin: 0 !important;
+    padding: 12px;
+    font-size: 14px !important;
+    color: #222;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.column-inner-scroll {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444;
+    overflow-y: auto;
+    max-height: 320px; /* Keeps columns identical and uniform in height */
+}
+
+/* Interior Detail Stylings */
+.law-item {
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(0,0,0,0.06);
+}
+
+.law-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.sub-section-title {
+    display: block;
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 12px;
+    color: #8a6d1f;
+    letter-spacing: 0.5px;
+    margin: 15px 0 6px 0;
+    border-bottom: 1px solid rgba(184, 150, 46, 0.2);
+    padding-bottom: 2px;
+}
+
+.sub-section-title:first-child {
+    margin-top: 0;
+}
+
+.temple-link {
+    color: #b8962e !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.temple-link:hover {
+    color: #8a6d1f !important;
+    text-decoration: underline !important;
+}
+
+/* Alliance Banners UI block */
+.alliance-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.alliance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.02);
+    padding: 6px 10px;
+    border-left: 2px solid #b8962e;
+}
+
+.alliance-logo {
+    width: 85px;
+    height: auto;
+    border: 1px solid rgba(184, 150, 46, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.alliance-logo:hover {
+    transform: scale(1.03);
+}
+
+.links-row {
+    text-align: center;
+    margin-top: 10px;
+}

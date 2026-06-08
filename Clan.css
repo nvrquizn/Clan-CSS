@@ -55,13 +55,129 @@ body::before {
     background: url("https://i.ibb.co/848h8s4H/Screenshot-2026-05-03-at-20-52-58.png") center/cover no-repeat fixed;
   }
 }
+
+/* ============================= */
+/* 🌙 TOPBAR */
+/* ============================= */
+
+.container.topbar {
+    background: linear-gradient(
+        180deg,
+        rgba(245, 242, 235, 0.95),
+        rgba(255, 255, 255, 0.95)
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        inset 0 0 20px rgba(184,150,46,0.15),
+        0 0 10px rgba(184,150,46,0.25),
+        1px 1px 5px var(--stone) !important;
+
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.welcomeback {
+    color: #222222 !important;
+    font-size: 16px;
+
+    text-shadow: 0 0 5px rgba(184,150,46,0.2);
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.welcomeback a {
+    color: #b8962e !important;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 6px rgba(138,109,31,0.2);
+
+    transition: 0.5s;
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.welcomeback a:hover {
+    color: #8a6d1f !important;
+
+    text-shadow: 0 0 10px rgba(184,150,46,0.3);
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.toplinks li a {
+    color: #444444 !important; 
+    font-size: 9px;
+    text-decoration: none;
+
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover {
+    color: #b8962e !important; 
+
+    background: rgba(184, 150, 46, 0.08);
+    box-shadow: 0 0 10px rgba(184, 150, 46, 0.15);
+
+    text-shadow: 0 0 6px rgba(184, 150, 46, 0.2);
+}
+
+.toplinks img.icon {
+    filter:
+        drop-shadow(0 0 4px rgba(184, 150, 46, 0.2))
+        brightness(1.0);
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter:
+        drop-shadow(0 0 8px rgba(184, 150, 46, 0.4))
+        brightness(1.05);
+}
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #222222 !important; 
+
+    text-shadow: 0 0 6px rgba(184, 150, 46, 0.15);
+
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.toplinks li a[href*="logout"] {
+    color: #444444 !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(184, 150, 46, 0.1);
+
+    box-shadow: 0 0 10px rgba(184, 150, 46, 0.2);
+}
+
+
   
 /* ================================= */
 /* 📦 MAIN CONTENT */
 /* ================================= */
 
 .container.main {
-  background: rgba(255,255,255,0.9) !important;
+  background: rgba(255,255,255,0.5) !important;
   border: 2px solid var(--gold);
   border-radius: 14px;
   box-shadow: 0 0 20px var(--shadow);

@@ -216,11 +216,10 @@ body::before {
 /* ================================= */
 
 .container.main {
-  background: rgba(255,255,255,0.5) !important;
-  border: 2px solid var(--gold);
-  border-radius: 14px;
-  box-shadow: 0 0 20px var(--shadow);
-  padding: 15px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px;
 }
 
 /* ================================= */

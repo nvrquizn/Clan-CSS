@@ -222,6 +222,13 @@ body::before {
     padding: 15px;
 }
 
+.container.main .box,
+div.box {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+	
 /* ================================= */
 /* 🏛️ HEADERS */
 /* ================================= */

@@ -214,18 +214,21 @@ body::before {
 /* ================================= */
 /* 📦 MAIN CONTENT */
 /* ================================= */
-.container.main,
-.container.main .box,
-div.box,
-.table {
+.container.main, 
+.container.main .box, 
+div.box, 
+.table,
+.alert-success,
+#pageContainer {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-/* Keeps the inner cells clean without adding background layers */
+/* Keeps the inner table text rows completely clean */
 .table td, 
-.table th {
+.table th,
+.alert-success a {
     background: transparent !important;
     border: none !important;
 }
